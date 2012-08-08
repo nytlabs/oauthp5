@@ -25,8 +25,14 @@ body {
 
 #header {
 	float:left;
-	padding-top:24px;
-	padding-bottom:48px;
+	background: url('banner.png') no-repeat left top;
+	height: 98px;
+	width: 100%;
+}
+
+#header h1 {
+	padding-top:42px;
+	margin-left: 64px;
 }
 
 #menu {
@@ -36,11 +42,7 @@ body {
 }
 
 
-#about,
-#download,
-#examples,
-#demos,
-#misc {
+.section {
 	width:480px;
 	float:left;
 	margin-right:24px;
@@ -159,14 +161,18 @@ body {
 
 
 #header {
-	background-color:#fff;
-	color:#333;
+	/*background-color: #556270;*/
+	background-color: #36403b;
+}
+
+#header h1 {
+	color: #fff;
 }
 
 
-
 h1, h2, h3, h4, h5, h6 {
-	color:#666;
+	/*color: #556270;*/
+	color: #36403b;
 }
 
 
@@ -182,12 +188,13 @@ a,strong {
 
 a:hover, 
 a:active {
-	color: #333;
+	color: #6c8077;
 }
 
 
 a:visited,
 a:link:visited {
+	/*color: #6c8077;*/
 	color: #333;
 }
 
@@ -199,5 +206,5 @@ a:link:visited {
 
 
 #footer a, #menu a {
-	color:#333;
+	color:#6c8077;
 }

@@ -17,11 +17,12 @@
 <link rel="stylesheet" type="text/css" href="./stylesheet.css">
 </head>
 <body>
-	<div id="container">
 	
-		<div id="header">
-			<h1>##library.name##</h1>
-		</div>
+	<div id="header">
+		<h1>##library.name##</h1>
+	</div>
+	
+	<div id="container">
 		
 		<div id="menu" class="clear">
 			<ul>
@@ -29,16 +30,17 @@
 				<li><a href="#download">Download</a> \ </li>
 				<li><a href="#download">Installation</a> \ </li>
 				<li><a href="#examples">Examples</a> \ </li>
-				<li><a href="./reference/index.html" target="_blank">Reference</a></li>
+				<li><a href="./reference/index.html" target="_blank">Reference</a> \ </li>
 				<!-- <li><a href="#demos">Demos</a> \ </li> -->				
 				<!-- <li><a href="#misc">Misc</a> \ </li> -->
 				<!-- <li><a href="#images">Images</a> \ </li> -->
+				<li><a href="#more">More on OAuth</a></li>
 			</ul>
 		</div>
 		
 		<div id="content" class="clear">
 			
-			<div id="about">
+			<div id="about" class="section">
 			<h2>##library.name##</h2>
 			<p>
 			A library by <a href="##author.url##">##author.name##</a> for the <a href="http://www.processing.org" target="_blank">Processing</a> programming environment.<br>
@@ -47,14 +49,18 @@
 			<p>
 			##library.sentence##<br>
 			##library.paragraph##<br>
-			Feel free to replace this paragraph with a description of the library.<br>
-			Contributed libraries are developed, documented, and maintained by members of the Processing community. Further directions are included with each library. For feedback and support, please post to the Discourse. We strongly encourage all libraries to be open source, but not all of them are.
+			</p><p>
+			OAuth is an open standard for authorization. It allows users to share their private data stored on one site with another site without having to hand out their credentials, typically supplying authentication tokens instead. Each token grants access to a specific site (e.g., Flickr) for specific resources (e.g., read-only access to an individual stream) and for a defined duration (e.g., the next 2 hours). This allows a user to grant a third party app (e.g. your Processing sketch) access to their information stored with another service provider, without sharing their access permissions or the full extent of their data.
+			<br><br>
+			OAuth is currently the preferred protocol for accessing user data on Twitter, Facebook, Google, Flickr, Foursquare, and <a href="http://www.openpaths.cc/">OpenPaths</a>, among many others. Wikipedia has a <a href="http://en.wikipedia.org/wiki/Oauth#List_of_OAuth_Service_Providers">a list</a> here.
+			<br><br>
+			For usage feedback on the oauthP5 library, please post to the Processing's <a href="http://forum.processing.org/contributed-library-questions">contributed library forum</a>.  For bugs reports, and feature requests, please post to our Bitbucket <a href="https://bitbucket.org/nytlabs/oauthp5/issues">issue tracker</a>.
 			</p>
 			</div>
 			
 			
 			
-			<div id="download" class="clear">
+			<div id="download" class="clear section">
 			<h2>Download</h2>
 			<p>
 			Download ##library.name## version ##library.prettyVersion## (##library.version##) in 
@@ -74,12 +80,13 @@
 			</div>
 			
 			
-			<div id="examples" class="clear">
+			<div id="examples" class="clear section">
 			<h2>Examples</h2>
-			<p>Find a list of examples in the current distribution of ##library.name##, or have a look at them by following the links below.</p>
+			<p>Find a list of examples in the current distribution of ##library.name##, or have a look at them by following the links below.
 			<ul>
 			##examples##
 			</ul>
+			</p>
 			</div>
 			
 			
@@ -100,7 +107,7 @@
 			
 			<!-- use the demos section for a list of applets run in a browser. -->
 			<!--
-			<div id="demos" class="clear">
+			<div id="demos" class="clear section">
 				<h2>demos</h2>
 				<p>
 				find a list of online applet demos below.
@@ -114,7 +121,7 @@
 			
 			<!-- use the misc section for other relevant information. Activate the link to the misc section in the menu above. -->
 			<!--
-			<div id="misc" class="clear">
+			<div id="misc" class="clear section">
 				<p></p>
 			</div>
 			-->
@@ -124,6 +131,21 @@
 			<div id="images" class="clear">
 			</div>
 			-->
+
+			<div id="more" class="clear section">
+			<h2>More on OAuth</h2>
+			<p>
+			We're very excited about the emergence of OAuth as a standard for secure data access, and hopefully, by using this library, you will too!  At the same time, we understand that the OAuth concept is totally confusing because it took us a while to get it too.  However, the <a href="http://oauth.net/">OAuth Community Site</a> has this excellent analogy:
+			<br><br>
+			Many luxury cars today come with a valet key. It is a special key you give the parking attendant and unlike your regular key, will not allow the car to drive more than a mile or two. Some valet keys will not open the trunk, while others will block access to your onboard cell phone address book. Regardless of what restrictions the valet key imposes, the idea is very clever. You give someone limited access to your car with a special key, while using your regular key to unlock everything.
+			<br><br>
+			Every day new websites launch offering services which tie together functionality from other sites. A photo lab printing your online photos, a social network using your address book to look for friends, and APIs to build your own desktop application version of a popular site. These are all great services – what is not so great about some of the implementations is their request for your username and password to the other site. When you agree to share your secret credentials, not only you expose your password to someone else (yes, that same password you also use for online banking), you also give them full access to do as they wish. They can do anything they wanted – even change your password and lock you out.
+			<br><br>
+			This is the problem OAuth solves. It allows you, the User, to grant access to your private resources on one site (which is called the Service Provider), to another site (called Consumer, not to be confused with you, the User). While OpenID is all about using a single identity to sign into many sites, OAuth is about giving access to your stuff without sharing your identity at all (or its secret parts).
+			<br><br>
+			Read more <a href="http://oauth.net/about/">about OAuth here</a>.
+			</p>
+			</div>
 			
 			
 			<br class="clear" />
