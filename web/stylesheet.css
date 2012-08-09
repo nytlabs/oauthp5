@@ -41,6 +41,15 @@ body {
 	margin-bottom:64px;
 }
 
+#img1 {
+	width: 460px;
+	margin-left: -39px;
+}
+
+#img2 {
+	width: 470px;
+	margin-left: -13px;
+}
 
 .section {
 	width:480px;
