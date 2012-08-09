@@ -34,7 +34,8 @@
 				<!-- <li><a href="#demos">Demos</a> \ </li> -->				
 				<!-- <li><a href="#misc">Misc</a> \ </li> -->
 				<!-- <li><a href="#images">Images</a> \ </li> -->
-				<li><a href="#more">More on OAuth</a></li>
+				<li><a href="#more">More on OAuth</a> \ </li>
+				<li><a href="#apis">Additional API Support</a></li>
 			</ul>
 		</div>
 		
@@ -43,10 +44,10 @@
 			<div id="about" class="section">
 			<h2>##library.name##</h2>
 			<p>
-			A library by <a href="##author.url##">##author.name##</a> for the <a href="http://www.processing.org" target="_blank">Processing</a> programming environment.<br>
+			A library by <a href="##author.url##">##author.name##</a> for the <a href="http://www.processing.org" target="_blank">Processing</a> programming environment.
+			<br><br>
 			Last update, ##date##.
-			</p>
-			<p>
+			<br><br>
 			##library.sentence##<br>
 			##library.paragraph##<br>
 			</p><p>
@@ -144,6 +145,15 @@
 			This is the problem OAuth solves. It allows you, the User, to grant access to your private resources on one site (which is called the Service Provider), to another site (called Consumer, not to be confused with you, the User). While OpenID is all about using a single identity to sign into many sites, OAuth is about giving access to your stuff without sharing your identity at all (or its secret parts).
 			<br><br>
 			Read more <a href="http://oauth.net/about/">about OAuth here</a>.
+			</p>
+			</div>
+			
+			<div id="apis" class="clear section">
+			<h2>Additional API Support</h2>
+			<p>
+			So, you are looking to connect to services other than Twitter, Facebook, Google, Flickr, and OpenPaths. We are planning to expand the variety of examples we offer in the future, but meanwhile you need not worry about waiting either &mdash; the Scribe Java OAuth library supports almost 30 services as of last count, and since oauthP5 is really just a Processing-flavored version of Scribe, you can easily use any of those APIs with just a little Java-to-Processing translation.
+			<br><br>
+			The Scribe library comes with 24 Java examples, which you can peruse <a href="https://github.com/fernandezpablo85/scribe-java/tree/master/src/test/java/org/scribe/examples">here</a> and adopt for your own purposes. If the API you wish to use isn't in that list, study the Scribe source code to see <a href="https://github.com/fernandezpablo85/scribe-java/tree/master/src/main/java/org/scribe/builder/api">all supported APIs</a>. You will find that nearly all of the APIs operate in the same way and solutions should be very similar to existing oauthP5 libraries. If you have successful and well-documented examples of new APIs and you are interested in contributing them to oauthP5, <a href="mailto:agnes(dot)chang(at)nytimes(dot).com">let us know</a>.  
 			</p>
 			</div>
 			
