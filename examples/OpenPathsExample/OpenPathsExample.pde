@@ -56,5 +56,5 @@ println();
 println(response.getBody());
 if (response.getCode() == 200) {
   println();
-  println("Thats it! Go and build something awesome with your data!");
+  println("That's it! Go and build something awesome with your data!");
 }

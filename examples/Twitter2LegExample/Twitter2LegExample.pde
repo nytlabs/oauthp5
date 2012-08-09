@@ -25,7 +25,7 @@ import oauthP5.oauth.*;
 
 final String READ_URL = "https://api.twitter.com/1/statuses/home_timeline.json";
 final String POST_URL = "https://api.twitter.com/1/statuses/update.json";
-final String CONSUMER_KEY = "hssrnvvwlp72wAS3DmU9g";
+final String CONSUMER_KEY = "hssrnvvwlp72wAS3DmU9g"; // use your own app's key...
 final String CONSUMER_SECRET = "NHkVrXBxmw5vj4jWreX2hN0XigCPFtmFafvdomds";
 final String ACCESS_TOKEN = "633268302-2GEpq2svYsp2b48lwlxm4SjCnzUp3nrxSvLzja10";
 final String ACCESS_TOKEN_SECRET = "C9zhkMvu2d1mQro1aexyiUhnfMGzSFIZtu57aVjYAU";
@@ -56,7 +56,7 @@ println();
 println(response.getBody());
 if (response.getCode() == 200) {
   println();
-  println("Thats it! Go and build something awesome with your data!");
+  println("That's it! Go and build something awesome with your data!");
 }
 
 // Post demo:
@@ -77,6 +77,6 @@ println();
 println(response.getBody());
 if (response.getCode() == 200) {
   println();
-  println("Thats it! Go and build something awesome with your data!");
+  println("That's it! Go and build something awesome with your data!");
 }
 
