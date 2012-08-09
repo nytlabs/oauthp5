@@ -16,7 +16,7 @@ First, if you are only interested in using the project and _viewing_ the source 
 
 Ok, so if you're still reading along here it's because you want to do more with the source code than just look at it. This repository is setup as an Eclipse project. Once you have acquired a copy of the repository by either downloading the compressed file provided by Bitbucket (see top right button "get source") or by cloning through mercurial, you can import it into Eclipse as an existing project and browse around the source, making any changes you want.
 
-This project was set up using the Processing Library template, so it might be useful to familiarize yourself with the original template instructions [here](http://code.google.com/p/processing/wiki/LibraryTemplate).
+This project was set up using the Processing Library template, so it might be useful to familiarize yourself with the [original template instructions](http://code.google.com/p/processing/wiki/LibraryTemplate).
 
 To compile using Ant:
 

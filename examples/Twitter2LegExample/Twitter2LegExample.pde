@@ -35,8 +35,6 @@ OAuthService service = new ServiceBuilder()
   .provider(TwitterApi.class)
   .apiKey(CONSUMER_KEY)
   .apiSecret(CONSUMER_SECRET)
-  //uncomment the following line to see details on what ServiceBuilder is doing
-//  .debugStream(System.out)
   .build();
 
 println("=== Twitter's 2-legged OAuth Workflow ===");

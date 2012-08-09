@@ -23,8 +23,6 @@ OAuthService service = new ServiceBuilder()
   .provider(OpenPathsApi.class)
   .apiKey(ACCESS)
   .apiSecret(SECRET)
-  //uncomment the following line to see details on what ServiceBuilder is doing
-  //.debugStream(System.out)
   .build();
 
 println("=== OpenPaths' OAuth Workflow ===");
