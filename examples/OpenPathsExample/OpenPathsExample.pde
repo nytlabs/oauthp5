@@ -38,12 +38,13 @@ Token token = new Token("", "");
 service.signRequest(token, request);
 
 // Add parameters to specify that we want to retrieve location points
-// logged within the last 24 hours.
+// logged within the last 30 days (note that the OpenPaths API takes
+// start and end time parameters in seconds.)
 // Make sure your request is signed before you add these parameters,
 // because the OpenPaths server expects a signature base string that
 // doesn't include non-oauth params. 
-request.addQuerystringParameter("start_time", String.valueOf(System.currentTimeMillis() - 24*60*60));
-request.addQuerystringParameter("end_time", String.valueOf(System.currentTimeMillis()));
+request.addQuerystringParameter("start_time", String.valueOf(System.currentTimeMillis() / 1000 - 30*24*60*60));
+request.addQuerystringParameter("end_time", String.valueOf(System.currentTimeMillis() / 1000));
 
 // Now we can send the fully-formed request.
 Response response = request.send();
