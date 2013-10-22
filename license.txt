@@ -1,4 +1,4 @@
-The MIT License Java OAuth
+The MIT License: Scribe library (Java OAuth)
 
 Copyright (c) 2010 Pablo Fernandez
 
