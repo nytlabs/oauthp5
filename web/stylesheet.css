@@ -1,0 +1,219 @@
+/* processingLibs style by andreas schlegel, sojamo. */
+
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+body {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	font-size : 100%; 
+    font-size : 0.70em;
+	font-weight : normal;
+	line-height	: normal;
+}
+
+
+
+#container {
+	margin-left:64px;
+	background-color:#fff;
+}
+
+#header {
+	float:left;
+	background: url('banner.png') no-repeat left top;
+	height: 98px;
+	width: 100%;
+}
+
+#header h1 {
+	padding-top:42px;
+	margin-left: 64px;
+}
+
+#menu {
+	margin-top:16px;
+	float:left;
+	margin-bottom:64px;
+}
+
+#img1 {
+	width: 460px;
+	margin-left: -39px;
+}
+
+#img2 {
+	width: 470px;
+	margin-left: -13px;
+}
+
+.section {
+	width:480px;
+	float:left;
+	margin-right:24px;
+}
+
+
+#resources, #info {
+	width:320px;
+	float:left;
+}
+
+
+.clear {
+	clear:both;
+}
+
+#footer {
+	margin-top:300px;
+	height:20px;
+	margin-bottom:32px;
+}
+
+
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+#menu ul li, #subMenu ul li {
+	float:left;
+	padding-right:6px; 
+}
+
+
+
+
+
+
+/* Headings */
+
+h1 {
+	font-size:2em;
+	font-weight:normal;
+}
+
+
+h2, h3, h4, h5, th {
+	font-size:1.3em;
+	font-weight:normal;
+	margin-bottom:4px;
+}
+
+
+
+p { 
+	font-size:1em;
+	width:90%;
+	margin-bottom:32px;
+}
+
+
+pre, code {  
+	font-family:"Courier New", Courier, monospace; 
+	font-size:1em; 
+	line-height:normal;
+}
+
+
+
+
+hr {
+	border:0;
+	height:1px;
+	margin-bottom:24px;
+}
+
+
+a {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+a:hover, 
+a:active {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+a:visited,
+a:link:visited {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+
+img {
+	border: 0px solid #000000;
+}
+
+
+
+
+
+/* COLORS */
+
+
+body {
+	color : #333;
+	background-color :#fff;
+}
+
+
+#header {
+	/*background-color: #556270;*/
+	background-color: #36403b;
+}
+
+#header h1 {
+	color: #fff;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	/*color: #556270;*/
+	color: #36403b;
+}
+
+
+pre, code {  
+	color: #000000;
+}
+
+
+a,strong {
+	color: #333;
+}
+
+
+a:hover, 
+a:active {
+	color: #6c8077;
+}
+
+
+a:visited,
+a:link:visited {
+	/*color: #6c8077;*/
+	color: #333;
+}
+
+
+#footer, #menu {
+	background-color:#fff;
+	color:#333;
+}
+
+
+#footer a, #menu a {
+	color:#6c8077;
+}
